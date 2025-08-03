@@ -1,0 +1,8 @@
+baseURL = 'https://recipedumper.paperministry.xyz/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[module]
+  [[module.imports]]
+    path = "github.com/GrantBirki/dario"
+    version = "main"
