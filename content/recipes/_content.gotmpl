@@ -1,0 +1,37 @@
+{{ $data := resources.Get "recipe.json" }}
+
+{{ $recipe := unmarshal $data }} 
+
+{{ with $recipe }}
+  {{ $dates := dict "date" (time.AsTime .date) }}
+  {{ $params := dict 
+     "description" .description
+     "ingredients" .recipeIngredient
+     "name" .name
+     "prepTime" .prepTime
+     "cookTime" .cookTime
+     "totalTime" .totalTime
+     "recipeCategory" .recipeCategory
+     "recipeCuisine" .recipeCuisine
+     "recipeYield" .recipeYield
+     "keywords" .keywords
+     "steps" .recipeInstructions
+   }}
+   {{ $text := partial "recipe.html" (dict "ingredients" $params.ingredients "steps" $params.steps) }}
+   {{ $content := dict
+      "mediaType" "text/markdown"
+      "value" $text
+   }}
+        
+
+  {{ $page := dict
+      "content"  $content
+      "description" .description
+      "params" $params
+      "kind" "page"
+      "path" .name
+      "title" .name
+    }}
+  {{ $.AddPage $page }}
+{{ end }}
+

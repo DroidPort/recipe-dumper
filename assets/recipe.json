@@ -1,0 +1,69 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "name": "Bacon and Puff Pastry Wrapped Asparagus",
+  "description": "A fun and indulgent appetizer where asparagus is wrapped with spiral-cut puff pastry and bacon, baked to perfection, and served with a spicy mustard dipping sauce.",
+  "recipeYield": "4 servings",
+  "prepTime": "PT15M",
+  "cookTime": "PT20M",
+  "totalTime": "PT35M",
+  "recipeCategory": "Appetizer",
+  "recipeCuisine": "American",
+  "keywords": ["asparagus", "bacon", "puff pastry", "thanksgiving", "appetizer"],
+  "recipeIngredient": [
+    "1 packet puff pastry, defrosted",
+    "12 asparagus spears, ends snapped",
+    "6 slices of bacon, halved lengthwise",
+    "1 egg, beaten (for egg wash)",
+    "Black pepper, to taste",
+    "1 tablespoon mustard",
+    "1 teaspoon Sriracha or other chili sauce (optional)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat oven to 375°F (190°C) and line a baking tray with parchment paper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Defrost the puff pastry and cut it into long thin strips to resemble spaghetti."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Snap the woody ends off the asparagus spears."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Wrap each asparagus spear with a strip of puff pastry in a spiral fashion."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cut bacon slices in half lengthwise to make them thinner, then wrap each asparagus spear (already wrapped in pastry) with a strip of bacon."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place wrapped asparagus on the prepared tray. Brush with beaten egg and season with black pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bake for 20 minutes, or until the pastry is golden and bacon is crisp."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While baking, mix mustard and chili sauce in a small bowl to make the dipping sauce."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve the asparagus warm with spicy mustard sauce on the side."
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "1"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Internet Chef"
+  }
+}

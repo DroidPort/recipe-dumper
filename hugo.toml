@@ -1,6 +1,10 @@
 baseURL = 'https://recipedumper.paperministry.xyz/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Recipes'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [module]
   [[module.imports]]

@@ -1,0 +1,13 @@
+{{ with .}}
+<h2>Ingredients</h2>
+<ul>
+  {{ range .ingredients }}
+  <li>{{ . }} </li>
+  {{ end }}
+</ul>
+<h2>Instructions</h2>
+ {{ range .steps }} 
+ <li>{{ .text }}</li>
+ {{ end }}
+
+{{ end }}
